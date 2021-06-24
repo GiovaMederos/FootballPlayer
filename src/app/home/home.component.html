@@ -7,20 +7,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <header>
-  <h1>Elige una liga</h1>
+  <h1>¿Que quieres ver?</h1>
 </header>
 <body>
 
   <div class="navbar_button">
-    <button (click)="showPlayers()">Mostrar jugadores</button>
+    <button routerLink="/players">Mostrar jugadores</button>
+
   </div>
 
   <div class="navbar_button">
-    <button (click)="showTeams()">Mostrar equipos</button>
+    <button routerLink="/teams">Mostrar equipos</button>
   </div>
 
-  <div class="navbar_button">
-    <button (click)="showLeagues()">Mostrar ligas</button>
+  <div class="Leagues_button">
+    <button routerLink= "/leagues" >Mostrar ligas</button>
   </div>
 
 </body>

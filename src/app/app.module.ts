@@ -9,6 +9,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TeamsComponent } from './teams/teams.component';
 import { PlayersComponent } from './players/players.component';
 import { LeaguesComponent } from './leagues/leagues.component';
+import { IndividualLeagueComponent } from './individual-league/individual-league.component';
+import { IndividualPlayerComponent } from './individual-player/individual-player.component';
+import { IndividualTeamComponent } from './individual-team/individual-team.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +20,9 @@ import { LeaguesComponent } from './leagues/leagues.component';
     TeamsComponent,
     PlayersComponent,
     LeaguesComponent,
+    IndividualLeagueComponent,
+    IndividualPlayerComponent,
+    IndividualTeamComponent,
 
   ],
   imports: [

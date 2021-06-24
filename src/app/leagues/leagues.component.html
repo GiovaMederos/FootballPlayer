@@ -1,1 +1,6 @@
-<p>leagues works!</p>
+<div *ngFor="let league of leagueList" [routerLink]="league['Nombre De La Liga']">
+  {{league["Nombre De La Liga"]}}
+  <img [src]="league['Logo de la Liga']" alt="Logo">
+</div>
+
+
