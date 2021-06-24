@@ -1,4 +1,4 @@
-<div *ngFor="let team of teamsList" >
+<div *ngFor="let team of teamsList" routerLink="/teams/{{team['Nombre del equipo']}}">
   {{team["Nombre del equipo"]}}
   <img [src]="team['Logo del Equipo']" alt="Logo">
 </div>

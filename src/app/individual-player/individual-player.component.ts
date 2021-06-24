@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { ApiService } from '../services/api.service';
 
 @Component({
   selector: 'app-individual-player',
@@ -7,9 +9,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IndividualPlayerComponent implements OnInit {
 
-  constructor() { }
+  public playerName = this.route.snapshot.paramMap.get('playerName');
+  public player : any;
+  constructor(private ApiService: ApiService,
+              private route: ActivatedRoute,
+    ) { }
 
   ngOnInit(): void {
+    this.getPlayer()
+  }
+
+  getPlayer() {
+    this.ApiService.getPlayers().then(res =>{
+    this.player = res.find(player => player['Nombre del Jugador'] ===
+    this.playerName)
+    })
   }
 
 }

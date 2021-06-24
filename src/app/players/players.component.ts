@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from '../services/api.service';
 
 @Component({
   selector: 'app-players',
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./players.component.css']
 })
 export class PlayersComponent implements OnInit {
+  public playersList: any[] = [];
 
-  constructor() { }
+  constructor(private ApiService: ApiService) { }
 
   ngOnInit(): void {
+    this.showPlayers()
   }
 
+  showPlayers() {
+    this.ApiService.getPlayers().then((res: any) => {this.playersList= res; return this.playersList});
+  }
 }

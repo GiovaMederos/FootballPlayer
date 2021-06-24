@@ -12,10 +12,10 @@ import { ApiService } from '../services/api.service';
 })
 export class IndividualTeamComponent implements OnInit {
 
-  public team : string;
-  public playersList: any[] = [];
+  public team : any;
   public teamName = this.route.snapshot.paramMap.get('teamName');
-  public player= "";
+  public playersList: any[] = [];
+  public player : any;
 
 
   constructor(private ApiService: ApiService,
@@ -28,15 +28,19 @@ export class IndividualTeamComponent implements OnInit {
 
   getTeam() {
     this.ApiService.getTeams().then(res =>{
-    this.team = res.find(team => team['Nombre del equipo'] === this.teamName)
+    this.team = res.find(team => team['Nombre del equipo'] ===
+    this.teamName)
     this.showPlayers()
     })
   }
+  showPlayers() {
+    this.ApiService.getPlayers().then((res: any) => {this.playersList= res; return this.playersList});
+  }
 
-  // getPlayers() {
-  //   this.ApiService.getPlayers().then(res => {
-  //   this.playersList= res.filter(players => players.teamId === this.player.id);
-  //   return this.playersList});
-  // }
+  getPlayers() {
+    this.ApiService.getPlayers().then(res => {
+    this.playersList= res.filter(players => players.teamId === this.player.id);
+    return this.playersList});
+  }
 
 }

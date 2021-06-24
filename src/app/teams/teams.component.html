@@ -1,1 +1,5 @@
-<p>teams works!</p>
+<div *ngFor="let team of teamsList" [routerLink]="team['Nombre del equipo']">
+  {{team["Nombre del equipo"]}}
+  <img [src]="team['Logo del Equipo']" alt="Logo">
+</div>
+
