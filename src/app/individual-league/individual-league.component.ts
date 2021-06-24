@@ -23,14 +23,16 @@ export class IndividualLeagueComponent implements OnInit {
 
   getLeague() {
     this.ApiService.getLeagues().then(res =>{
-      this.league = res.find(league => league['Nombre De La Liga'] === this.leagueName)
+      this.league = res.find(league => league['Nombre De La Liga'] ===
+      this.leagueName)
       this.showTeams()
     })
   }
 
   showTeams() {
     this.ApiService.getTeams().then(res => {
-      this.teamsList= res.filter(teams => teams.Liga === this.league.Identificador);
+      this.teamsList= res.filter(teams => teams.Liga ===
+      this.league.Identificador);
       return this.teamsList});
   }
 

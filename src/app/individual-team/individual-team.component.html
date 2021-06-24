@@ -1,1 +1,4 @@
-<p>individual-team works!</p>
+<div *ngFor="let player of playersList" routerLink="/players/{{player['Nombre del Jugador']}}" >
+  {{player["Nombre del Jugador"]}}
+  <img [src]="player['Avatar']" alt="Avatar">
+</div>
