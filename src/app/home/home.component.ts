@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../services/api.service';
+import {AccordionModule} from 'primeng/accordion';
+import {MenuItem} from 'primeng/api';
+import { AutoCompleteModule } from 'primeng/autocomplete';
 
 @Component({
   selector: 'app-home',
@@ -22,10 +25,10 @@ export class HomeComponent implements OnInit {
   }
 
   showTeams() {
-    this.ApiService.getTeams().then(res => {console.log(res)});
+    this.ApiService.getTeams().then(res => {this.teamList= res; return this.teamList});
   }
 
   showLeagues() {
-    this.ApiService.getLeagues().then(res => {console.log(res)});
+    this.ApiService.getLeagues().then(res => {this.leagueList= res; return this.leagueList});
   }
 }
