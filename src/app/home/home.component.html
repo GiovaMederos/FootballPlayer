@@ -11,18 +11,9 @@
   <h1>¿Que quieres ver?</h1>
 </header>
 <body>
-  <div class="navbar_button">
-    <button routerLink="/players">Mostrar jugadores</button>
-
-  </div>
-
-  <div class="navbar_button">
-    <button routerLink="/teams">Mostrar equipos</button>
-  </div>
-
-  <div class="Leagues_button">
-    <button routerLink= "/leagues" >Mostrar ligas</button>
-  </div>
+  <div id="sidenav">
+    <p-menubar [model]="items"></p-menubar>
+</div>
 
 </body>
 </html>

@@ -13,7 +13,7 @@ import { IndividualLeagueComponent } from './individual-league/individual-league
 import { IndividualPlayerComponent } from './individual-player/individual-player.component';
 import { IndividualTeamComponent } from './individual-team/individual-team.component';
 import { NzButtonModule } from 'ng-zorro-antd/button';
-import { SidebarComponent } from './sidebar/sidebar.component';
+
 
 
 
@@ -28,8 +28,6 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     IndividualLeagueComponent,
     IndividualPlayerComponent,
     IndividualTeamComponent,
-    SidebarComponent,
-
   ],
   imports: [
     BrowserModule,

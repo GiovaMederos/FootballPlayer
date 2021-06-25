@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../services/api.service';
-import {AccordionModule} from 'primeng/accordion';
+import {MenubarModule} from 'primeng/menubar';
 import {MenuItem} from 'primeng/api';
-import { AutoCompleteModule } from 'primeng/autocomplete';
 
 @Component({
   selector: 'app-home',
@@ -11,13 +10,20 @@ import { AutoCompleteModule } from 'primeng/autocomplete';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(private ApiService: ApiService) {}
-
+  items: MenuItem[] | undefined;
   public playerList: any[] = [];
   public teamList: any [] = [];
   public leagueList: any[] = [];
 
+  constructor(private ApiService: ApiService) {}
+
   ngOnInit(): void {
+
+    this.items = [
+      {label: "Jugadores", routerLink: ['/players']},
+      {label: "Equipos", routerLink: ['/teams']},
+      {label: "Ligas", routerLink: ['/leagues']},
+    ]
   }
 
   showPlayers() {
