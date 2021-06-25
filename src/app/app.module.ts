@@ -12,6 +12,10 @@ import { LeaguesComponent } from './leagues/leagues.component';
 import { IndividualLeagueComponent } from './individual-league/individual-league.component';
 import { IndividualPlayerComponent } from './individual-player/individual-player.component';
 import { IndividualTeamComponent } from './individual-team/individual-team.component';
+import {AccordionModule} from 'primeng/accordion'
+import {MenuItem} from 'primeng/api';
+
+
 
 @NgModule({
   declarations: [
@@ -23,7 +27,6 @@ import { IndividualTeamComponent } from './individual-team/individual-team.compo
     IndividualLeagueComponent,
     IndividualPlayerComponent,
     IndividualTeamComponent,
-
   ],
   imports: [
     BrowserModule,
