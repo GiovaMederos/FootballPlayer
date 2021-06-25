@@ -7,6 +7,7 @@ import { ApiService } from '../services/api.service';
   styleUrls: ['./players.component.css']
 })
 export class PlayersComponent implements OnInit {
+
   public playersList: any[] = [];
 
   constructor(private ApiService: ApiService) { }

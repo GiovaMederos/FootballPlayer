@@ -12,8 +12,9 @@ import { LeaguesComponent } from './leagues/leagues.component';
 import { IndividualLeagueComponent } from './individual-league/individual-league.component';
 import { IndividualPlayerComponent } from './individual-player/individual-player.component';
 import { IndividualTeamComponent } from './individual-team/individual-team.component';
-import {AccordionModule} from 'primeng/accordion'
-import {MenuItem} from 'primeng/api';
+import { NzButtonModule } from 'ng-zorro-antd/button';
+import { SidebarComponent } from './sidebar/sidebar.component';
+
 
 
 
@@ -27,11 +28,14 @@ import {MenuItem} from 'primeng/api';
     IndividualLeagueComponent,
     IndividualPlayerComponent,
     IndividualTeamComponent,
+    SidebarComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    NzButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

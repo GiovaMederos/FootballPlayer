@@ -17,6 +17,8 @@ export class LeaguesComponent implements OnInit {
   }
 
   showLeagues() {
-    this.ApiService.getLeagues().then(res => {this.leagueList= res; return this.leagueList});
+    this.ApiService.getLeagues().then(res => {
+      this.leagueList= res;
+      return this.leagueList});
   }
 }

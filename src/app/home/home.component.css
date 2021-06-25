@@ -1,19 +1,28 @@
+body{
+  background-image: url("../images/campo.jpg");
+  background-position: center;
+}
+
 
 h1{
   text-align: center;
+  font-family: 'Arvo', serif;
 }
 
 button{
   height: 100px;
-  width: 100%;
-  margin: 5px 5px;
+  width: 93%;
+  margin: 15px 15px;
   border: solid;
   border-radius: 16px;
   border-color: midnightblue;
-  background-color: rgba(240, 248, 255, 0);
+  background-color: rgba(240, 248, 255, 0.226);
+  font-family: 'Arvo', serif;
+  font-size: 20px;
+  position: relative;
 }
 
 button:hover{
-  background-color: rgba(139, 153, 167, 0.836);
+  background-color: rgba(139, 153, 167, 0.774);
 
 }
