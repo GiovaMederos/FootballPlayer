@@ -13,7 +13,7 @@ import { IndividualLeagueComponent } from './individual-league/individual-league
 import { IndividualPlayerComponent } from './individual-player/individual-player.component';
 import { IndividualTeamComponent } from './individual-team/individual-team.component';
 import { NzButtonModule } from 'ng-zorro-antd/button';
-
+import { MenubarModule } from 'primeng/menubar';
 
 
 
@@ -34,6 +34,7 @@ import { NzButtonModule } from 'ng-zorro-antd/button';
     AppRoutingModule,
     BrowserAnimationsModule,
     NzButtonModule,
+    MenubarModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
