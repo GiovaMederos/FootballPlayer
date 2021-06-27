@@ -42,7 +42,6 @@ import { NZ_I18N, en_US } from 'ng-zorro-antd/i18n';
     BrowserAnimationsModule,
     NzButtonModule,
     MenubarModule,
-    // DemoNgZorroAntdModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

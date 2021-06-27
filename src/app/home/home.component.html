@@ -8,20 +8,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <header>
-  <h1>¿Que quieres ver?</h1>
+  <p-menubar nz-menu-item="items">
+    <div>
+        <input type="text" pInputText placeholder="Search">
+    </div>
+  </p-menubar>
 </header>
 <body>
 
-  <p-menubar nz-menu-item="items">
-      <ng-template pTemplate="start">
-          <img src="assets/showcase/images/primeng.svg" height="40" class="p-mr-2">
-      </ng-template>
-      <ng-template pTemplate="end">
-          <input type="text" pInputText placeholder="Search">
-      </ng-template>
-  </p-menubar>
-    <!-- <p-menubar nz-menu-item="items">
-    <input type="text" pInputText placeholder="Search">
-  </p-menubar> -->
+  <h1>Let's play football!</h1>
+  <h5>Here you can find all players, teams or leagues.</h5>
 </body>
 </html>

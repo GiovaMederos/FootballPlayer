@@ -1,14 +1,19 @@
-body{
-  background-image: url("../images/campo.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
+#p-menubar {
+  text-align: center;
+  border: solid;
+  width: auto;
 }
-
 
 h1{
   text-align: center;
   font-family: 'Arvo', serif;
 }
+
+h5{
+  text-align: center;
+  font-family: 'Arvo', serif;
+}
+
 
 button{
   height: 100px;
