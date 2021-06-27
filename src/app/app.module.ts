@@ -14,8 +14,15 @@ import { IndividualPlayerComponent } from './individual-player/individual-player
 import { IndividualTeamComponent } from './individual-team/individual-team.component';
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { MenubarModule } from 'primeng/menubar';
+import { MenuItem } from 'primeng/api';
+import { NZ_ICONS } from 'ng-zorro-antd/icon';
+import { NZ_I18N, en_US } from 'ng-zorro-antd/i18n';
+// import { IconDefinition } from '@ant-design/icons-angular';
+// import * as AllIcons from '@ant-design/icons-angular/icons';
 
+// import { DemoNgZorroAntdModule } from './ng-zorro-antd.module';
 
+// import { NzDemoMenuInlineCollapsedComponent } from './app.component';
 
 
 @NgModule({
@@ -35,6 +42,7 @@ import { MenubarModule } from 'primeng/menubar';
     BrowserAnimationsModule,
     NzButtonModule,
     MenubarModule,
+    // DemoNgZorroAntdModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
